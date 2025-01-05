@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'DSEG7Modern-Regular';
+    src: url('fonts/DSEG7Modern-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'DSEG14Modern-Light';
+    src: url('fonts/DSEG14Modern-Light.ttf');
+}
+
+body {
+    width: 1024px;
+    height: 600px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'DSEG7Modern-Regular';
+    background-color: green;
+}
+
+/* Container for the play, pause, stop, fast forward, and rewind buttons */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button layout for bigger UI buttons */
+button.big {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Button layout for smaller UI buttons */
+button.small {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Container to hold the CD selector section of the UI */
+.cd-container {
+    display: flex;
+    width: 1024px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+/* Container for the player (progress bar and controls) */
+.player-container {
+    display: flex;
+    width: 1024px;
+    height: 300px;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+/* Container for the Playback bar */
+.progress-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Progress bar */
+#progress-bar {
+    appearance: none;
+    width: 560px;
+    height: 26px;
+    cursor: pointer;
+
+    border-radius: 0px;
+    margin-bottom: 5px;
+
+    background-color: black;
+}
+
+/* Progress bar track */
+#progress-bar::-webkit-slider-runnable-track {
+    background: url('images/playback-tick.png') repeat;
+    background-size: 8px 32px;
+    background-color: rgba(0, 0, 0, 0.8); /* Track color */
+    background-blend-mode: darken;
+    height: 100%; /* Match the height of the bar */
+    border-radius: 0px;
+}
+
+/* Progress bar thumb */
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default thumb */
+    width: 8px;
+    height: 32px;
+    background: url('images/tracker-tick.png') no-repeat center center; /* Custom image */
+    background-size: cover; /* Ensures the image scales */
+    cursor: pointer;
+    position: relative;
+}
+
+/* Container for the time boxes */
+.song-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    justify-content: center; /* Align items horizontally */
+}
+
+/* ID's for the song text*/ 
+#song-text {
+    position: absolute;
+    font-size: 54px;
+    text-align: center;
+    color: beige;
+    opacity: 1.0;
+    font-family: 'DSEG14Modern-Light';
+    margin-left: 75px;
+}
+
+/* Class for the background text to make the song title look like a 14 segment display */
+#song-back {
+    position: absolute;
+    font-size: 54px;
+    text-align: center;
+    color: beige;
+    opacity: 0.3;
+    font-family: 'DSEG14Modern-Light';
+    margin-left: 75px;
+}
+
+/* Container for the time boxes */
+.text-container {
+    width: 1024px;
+    height: 54px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    justify-content: center; /* Align items horizontally */
+}
+
+/* Container for the time boxes */
+.time-container {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center; /* Align items horizontally */
+}
+
+/* ID's for the elapsed and remaining time text*/ 
+#elapsed-time, #remaining-time {
+    position: absolute;
+    font-size: 25px;
+    width: 75px;
+    text-align: center;
+    color: beige;
+}
+
+/* Class for the background text to make it look like a 7 segment display */
+#time-back {
+    font-size: 25px;
+    width: 75px;
+    text-align: center;
+    color: beige; 
+    opacity: 0.3;
+}
+
+/* Id's for each individual CD */
+#cd1, #cd2, #cd3, #cd4, #cd5, #cd6 {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    z-index: 1;
+
+    transition: opacity 1.0s ease;
+
+    opacity: 0.3;
+}
+
+/* Class for CD's */
+.cd {
+    cursor: pointer;
+}
+
+/* Id and style for cd head*/
+#cd-head {
+    width: 132px;
+    height: 276px;
+    top: 12;
+    left: 0;
+    position: absolute;
+    border-radius: 5px;
+    transition: top 1.0s ease-in-out 0.25s, left 1.0s ease-in-out 0.25s;
+}
+
+/* Classes for the CD head segments */
+.cd-head-1 {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    position: absolute;
+    left: 32px; 
+    top: 20px;
+}
+
+.cd-head-2 {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    position: absolute;
+    left: 192px; 
+    top: 20px;
+}
+
+.cd-head-3 {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    position: absolute;
+    left: 352px; 
+    top: 20px;
+}
+
+.cd-head-4 {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    position: absolute;
+    left: 512px; 
+    top: 20px;
+}
+
+.cd-head-5 {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    position: absolute;
+    left: 672px; 
+    top: 20px;
+}
+
+.cd-head-6 {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    position: absolute;
+    left: 832px; 
+    top: 20px;
+}
+
+/* Id's for each individual CD head segments */
+.H11, .H12, .H13, .H14, .H15, .H16, .H21, .H22, .H23, .H24, .H25, .H26, .H31, .H32, .H33, .H34, .H35, .H36, .H41, .H42, .H43, .H44, .H45, .H46, .H51, .H52, .H53, .H54, .H55, .H56, .H61, .H62, .H63, .H64, .H65, .H66 {
+    width: 150px;
+    height: 260px;
+    position: absolute;
+
+    opacity: 0.3;
+
+    transition: opacity 0.25s ease;
+}
+
+.loop-img {
+    width: 50px;
+    height: 50px; 
+    opacity: 0.3;
+}
+
+.shuffle-img {
+    width: 50px;
+    height: 50px; 
+    opacity: 0.3;
+}

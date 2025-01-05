@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- CD Selector Block -->
+    <div class="cd-container">
+        <img src="images/cd.png" id="cd1" alt="CD 1" class="cd" data-cd="1"/>
+        <img src="images/cd.png" id="cd2" alt="CD 2" class="cd" data-cd="2"/>
+        <img src="images/cd.png" id="cd3" alt="CD 3" class="cd" data-cd="3"/>
+        <img src="images/cd.png" id="cd4" alt="CD 4" class="cd" data-cd="4"/>
+        <img src="images/cd.png" id="cd5" alt="CD 5" class="cd" data-cd="5"/>
+        <img src="images/cd.png" id="cd6" alt="CD 6" class="cd" data-cd="6"/>
+        <div class="cd-head-1">
+            <img src="images/CD-head-lm.png" class="H11">
+            <img src="images/CD-head-lb.png" class="H12">
+            <img src="images/CD-head-lt.png" class="H12">
+            <img src="images/CD-head-tl.png" class="H13">
+            <img src="images/CD-head-bl.png" class="H13">
+            <img src="images/CD-head-tr.png" class="H14">
+            <img src="images/CD-head-br.png" class="H14">
+            <img src="images/CD-head-rt.png" class="H15">
+            <img src="images/CD-head-rb.png" class="H15">
+            <img src="images/CD-head-rm.png" class="H16">
+        </div>
+        <div class="cd-head-2">
+            <img src="images/CD-head-lm.png" class="H21">
+            <img src="images/CD-head-lb.png" class="H22">
+            <img src="images/CD-head-lt.png" class="H22">
+            <img src="images/CD-head-tl.png" class="H23">
+            <img src="images/CD-head-bl.png" class="H23">
+            <img src="images/CD-head-tr.png" class="H24">
+            <img src="images/CD-head-br.png" class="H24">
+            <img src="images/CD-head-rt.png" class="H25">
+            <img src="images/CD-head-rb.png" class="H25">
+            <img src="images/CD-head-rm.png" class="H26">
+        </div>
+        <div class="cd-head-3">
+            <img src="images/CD-head-lm.png" class="H31">
+            <img src="images/CD-head-lb.png" class="H32">
+            <img src="images/CD-head-lt.png" class="H32">
+            <img src="images/CD-head-tl.png" class="H33">
+            <img src="images/CD-head-bl.png" class="H33">
+            <img src="images/CD-head-tr.png" class="H34">
+            <img src="images/CD-head-br.png" class="H34">
+            <img src="images/CD-head-rt.png" class="H35">
+            <img src="images/CD-head-rb.png" class="H35">
+            <img src="images/CD-head-rm.png" class="H36">
+        </div>
+        <div class="cd-head-4">
+            <img src="images/CD-head-lm.png" class="H41">
+            <img src="images/CD-head-lb.png" class="H42">
+            <img src="images/CD-head-lt.png" class="H42">
+            <img src="images/CD-head-tl.png" class="H43">
+            <img src="images/CD-head-bl.png" class="H43">
+            <img src="images/CD-head-tr.png" class="H44">
+            <img src="images/CD-head-br.png" class="H44">
+            <img src="images/CD-head-rt.png" class="H45">
+            <img src="images/CD-head-rb.png" class="H45">
+            <img src="images/CD-head-rm.png" class="H46">
+        </div>
+        <div class="cd-head-5">
+            <img src="images/CD-head-lm.png" class="H51">
+            <img src="images/CD-head-lb.png" class="H52">
+            <img src="images/CD-head-lt.png" class="H52">
+            <img src="images/CD-head-tl.png" class="H53">
+            <img src="images/CD-head-bl.png" class="H53">
+            <img src="images/CD-head-tr.png" class="H54">
+            <img src="images/CD-head-br.png" class="H54">
+            <img src="images/CD-head-rt.png" class="H55">
+            <img src="images/CD-head-rb.png" class="H55">
+            <img src="images/CD-head-rm.png" class="H56">
+        </div>
+        <div class="cd-head-6">
+            <img src="images/CD-head-lm.png" class="H61">
+            <img src="images/CD-head-lb.png" class="H62">
+            <img src="images/CD-head-lt.png" class="H62">
+            <img src="images/CD-head-tl.png" class="H63">
+            <img src="images/CD-head-bl.png" class="H63">
+            <img src="images/CD-head-tr.png" class="H64">
+            <img src="images/CD-head-br.png" class="H64">
+            <img src="images/CD-head-rt.png" class="H65">
+            <img src="images/CD-head-rb.png" class="H65">
+            <img src="images/CD-head-rm.png" class="H66">
+        </div>
+    </div>
+    <!-- Segmented LCD Block -->
+    <div class="player-container">
+        <!-- Song name display -->
+            <div class="song-name">
+            <div class="text-container">
+                <span id="song-back">~~~~~~~~~~~~~~~~~~~~</span><!-- Background text -->
+                <span id="song-text"></span><!-- Song text -->
+            </div>
+            </div>
+        <!-- Time display -->
+        <div class="progress-info">
+            <div class="time-container">
+                <span id="time-back">8:88</span><!-- Background text -->
+                <span id="elapsed-time">0:00</span> <!-- Elapsed time -->
+            </div>
+            <input type="range" id="progress-bar" value="0" min="0" max="69" > <!-- Progress bar -->
+            <div class="time-container">
+                <span id="time-back">8:88</span><!-- Background text-->
+                <span id="remaining-time">0:00</span> <!-- Remaining time -->
+            </div>
+        </div>
+        <!-- Box to hold the controls and icons below the playback bar -->
+        <div class="controls">
+            <!-- Shuffle button -->
+            <button class="small" id="shuffle">
+                <img src="images/shuffle.png" class="shuffle-img"/>
+            </button>
+
+            <!-- Rewind button -->
+            <button class="small" id="rewind">
+                <img id="rewind-img" src="images/rw.png" alt="Rewind" width="50" height="50"/>
+            </button>
+
+            <!-- Play/Pause button -->
+            <button class="big" id="play-pause">
+                <img id="play-pause-img" src="images/play.png" alt="Play" width="75" height="75"/>
+            </button>
+
+            <!-- Stop button -->
+            <button class="big" id="stop">
+                <img id="stop-img" src="images/stop-button.png" alt="Stop" width="75" height="75"/>
+            </button>
+
+            <!-- Fast Forwards button -->
+            <button class="small" id="fast-forward">
+                <img id="fast-forward-img" src="images/ff.png" alt="Fast Forward" width="50" height="50"/>
+            </button>
+
+            <!-- Loop button -->
+            <button class="small" id="loop">
+                <img src="images/repeat.png" class="loop-img"/>
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
