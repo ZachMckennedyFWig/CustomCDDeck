@@ -14,15 +14,14 @@
 ---
 > For this project, Python was used for control of CD drive and audio playback with an html/javascript UI. C++ is running on the Raspberry Pi Pico and is used to control the motors and sensors.
 
-<div style="margin-left: 20px;">
-#### Python:
-- [eel](https://github.com/python-eel/Eel) for communication between the UI and the Python backend.
-- [python-vlc](https://pypi.org/project/python-vlc/) for control of playback of the CD
-- [pycdio](https://github.com/rocky/pycdio/tree/master) for lower level control of the CD player (python bindings to [libcdio](https://github.com/ShiftMediaProject/libcdio))
 
-#### C++:
-- [arduino-pico](https://github.com/earlephilhower/arduino-pico) to access arduino sensor and motor libraries on the pico.
-- [Accel-Stepper](https://github.com/waspinator/AccelStepper) for async control of stepper motors.
-- [Adafruit-ADS1X15](https://github.com/adafruit/Adafruit_ADS1X15) sensor library for the analogue to digital converter. 
-</div>
+  #### Python:
+  - [eel](https://github.com/python-eel/Eel) for communication between the UI and the Python backend.
+  - [python-vlc](https://pypi.org/project/python-vlc/) for control of playback of the CD
+  - [pycdio](https://github.com/rocky/pycdio/tree/master) for lower level control of the CD player (python bindings to [libcdio](https://github.com/ShiftMediaProject/libcdio))
+
+  #### C++:
+  - [arduino-pico](https://github.com/earlephilhower/arduino-pico) to access arduino sensor and motor libraries on the pico.
+  - [Accel-Stepper](https://github.com/waspinator/AccelStepper) for async control of stepper motors.
+  - [Adafruit-ADS1X15](https://github.com/adafruit/Adafruit_ADS1X15) sensor library for the analogue to digital converter.
 
