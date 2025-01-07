@@ -2,6 +2,7 @@
 > Built from scratch using 3D printing, Machining, Python, Html/Javascript, C++, and Custom PCB's
 
 ### Hardware:
+---
 - [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
 - [Schiit Modi HiFi DAC](https://www.schiit.com/products/modi-plus)
 - [Pioneer BDR-XD08G CD Drive](https://www.amazon.com/dp/B0BN678FDT?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
@@ -10,6 +11,7 @@
 - [ADS 1115 16 bit ADC](https://www.amazon.com/HiLetgo-Converter-Programmable-Amplifier-Development/dp/B01DLHKMO2?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A30QSGOJR8LMXA&gQT=2)
 
 ### Libraries
+---
 > For this project, Python was used for control of CD drive and audio playback with an html/javascript UI. C++ is running on the Raspberry Pi Pico and is used to control the motors and sensors. 
 
 #### Python:
