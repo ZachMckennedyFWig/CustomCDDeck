@@ -1,5 +1,14 @@
 ## A CD Deck Inspired by the Legendary Beosound 9000
 > Built from scratch using 3D printing, Machining, Python, Html/Javascript, C++, and Custom PCB's
+<div align="center">
+  <img src="images\customCDPlayerHQ.png" alt="Image of the completed CD Deck" width="80%">
+</div>
+
+ <br/>
+
+`CDControlDeck/` is the C++ code running on the Raspberry Pi Pico.\
+`UI/` is the Python and HTML/Javascript used for the UI, Audio Playback, and CD drive control.\
+`images/` are images used in this README
 
 ### Hardware:
 ---
