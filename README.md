@@ -1,5 +1,10 @@
 ## A CD Deck Inspired by the Legendary Beosound 9000
 > Built from scratch using 3D printing, Machining, Python, Html/Javascript, C++, and Custom PCB's
+
+[YOUTUBE VIDEO](https://www.youtube.com/watch?v=SDKLhXEmK_8)
+
+<br/>
+
 <div align="center">
   <img src="images\customCDPlayerHQ.png" alt="Image of the completed CD Deck" width="80%">
 </div>
@@ -38,8 +43,8 @@ ___
 
 ___
 ### CAD:
-> *The current CAD assembly is not fully up to date but will be updated soon
 ___
+> *The current CAD assembly is not fully up to date but will be updated soon
 <div align="center">
   <img src="images\CDPlayerCAD.png" alt="Image of the CAD of the CD Player Assembly" width="80%">
 </div>
@@ -72,3 +77,12 @@ ___
 
 <br/>
 
+___
+### Reflections:
+___
+
+> This project has been months of work outside my full time job and has let me a learn some cool new skills such as simple PCB design and html/javascript UI design. It's also given me a much bigger appriciation for designers - It's really hard to make something look cool while still functioning properly.
+>
+> There are some oversights/intentional design flaws with this CD player that were made because of the lack of access to specific electronics I have, the biggest being the CD player using the clipping style CD players with latches on the spindle versus the superior clamping style CD drive that most high quality players use. I also could not for the life of me figure out a reliable way to hide the cursor on the Ui of the CD player on the raspberry pi, so that is still visable. Otherwise though, it functions well and will work exactly as shown in the youtube video. 
+> 
+> My dream would be to someday work for a company that designs synthesizers, audio equiptment, or interactive consumer electronics, so, if you are reading this and know any way for me to connect with those companies please do not hesitate to reach out to [my LinkedIn](https://www.linkedin.com/in/zach-mckennedy/)
