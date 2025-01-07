@@ -10,16 +10,19 @@
 - [Nema 17 Stepper Motors](https://www.omc-stepperonline.com/nema-17-bipolar-0-9deg-46ncm-65-1oz-in-2a-2-9v-42x42x48mm-4-wires-17hm19-2004s)
 - [ADS 1115 16 bit ADC](https://www.amazon.com/HiLetgo-Converter-Programmable-Amplifier-Development/dp/B01DLHKMO2?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A30QSGOJR8LMXA&gQT=2)
 
-### Libraries
+### Libraries:
 ---
-> For this project, Python was used for control of CD drive and audio playback with an html/javascript UI. C++ is running on the Raspberry Pi Pico and is used to control the motors and sensors. 
+> For this project, Python was used for control of CD drive and audio playback with an html/javascript UI. C++ is running on the Raspberry Pi Pico and is used to control the motors and sensors.
 
+<div style="margin-left: 20px;">
 #### Python:
 - [eel](https://github.com/python-eel/Eel) for communication between the UI and the Python backend.
 - [python-vlc](https://pypi.org/project/python-vlc/) for control of playback of the CD
 - [pycdio](https://github.com/rocky/pycdio/tree/master) for lower level control of the CD player (python bindings to [libcdio](https://github.com/ShiftMediaProject/libcdio))
 
-#### C++
+#### C++:
 - [arduino-pico](https://github.com/earlephilhower/arduino-pico) to access arduino sensor and motor libraries on the pico.
 - [Accel-Stepper](https://github.com/waspinator/AccelStepper) for async control of stepper motors.
 - [Adafruit-ADS1X15](https://github.com/adafruit/Adafruit_ADS1X15) sensor library for the analogue to digital converter. 
+</div>
+
