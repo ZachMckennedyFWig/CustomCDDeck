@@ -13,7 +13,7 @@
 
 `CDControlDeck/` is the C++ code running on the Raspberry Pi Pico.\
 `UI/` is the Python and HTML/Javascript used for the UI, Audio Playback, and CD drive control.\
-`images/` are images used in this README
+`images/` are images used in this README.\
 `CAD/` is the folder containing the STEP file for this CD player. 
 ___
 ### Hardware:
