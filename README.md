@@ -3,6 +3,7 @@
 <div align="center">
   <img src="images\customCDPlayerHQ.png" alt="Image of the completed CD Deck" width="80%">
 </div>
+
 ### Hardware:
 ---
 - [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
