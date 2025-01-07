@@ -25,6 +25,12 @@ ___
 - [Nema 17 Stepper Motors](https://www.omc-stepperonline.com/nema-17-bipolar-0-9deg-46ncm-65-1oz-in-2a-2-9v-42x42x48mm-4-wires-17hm19-2004s)
 - [ADS 1115 16 bit ADC](https://www.amazon.com/HiLetgo-Converter-Programmable-Amplifier-Development/dp/B01DLHKMO2?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A30QSGOJR8LMXA&gQT=2)
 
+<br/>
+
+<img src="images\Basic components.png" alt="Image of the completed CD Deck" width="60%">
+
+<br/>
+
 ___
 ### Libraries:
 ___
