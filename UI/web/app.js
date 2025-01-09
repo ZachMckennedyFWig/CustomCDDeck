@@ -57,13 +57,13 @@ document.getElementById("loop").addEventListener("click", function() {
     eel.toggle_loop()
 });
 
-// Loop Handler
+// Shuffle Handler
 document.getElementById("shuffle").addEventListener("click", function() {
     const shuffle_img = document.querySelector('.shuffle-img'); // Correct method to select by class
     // Check the current opacity and toggle it
     if (shuffle_img.opacity == '0.3') {shuffle_img.opacity = '1.0';} 
     else {shuffle_img.opacity = '0.3';}
-    // Call python function to toggle the looping function
+    // Call python function to toggle the shuffling function
     eel.toggle_shuffle();
 });
 
